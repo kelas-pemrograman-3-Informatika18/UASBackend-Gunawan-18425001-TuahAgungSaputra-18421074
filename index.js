@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const path = require('path')
 
-const mongoURL = 'mongodb://localhost:27017/movieapp'
+const mongoURL = 'mongodb://localhost:27017/aplication'
 
 mongoose.connect(mongoURL, {
   useCreateIndex: true,
@@ -35,6 +35,6 @@ app.use('/user', require('./routes/user'))
 app.use('/order', require('./routes/order'))
 app.use('/movie', require('./routes/movie'))
 
-app.listen(3000, () => {
+app.listen(5000, () => {
   console.log('Server telah di jalankan')
 })
